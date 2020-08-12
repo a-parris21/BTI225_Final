@@ -1,0 +1,293 @@
+/********************************************************************
+I declare that my assignment is wholly my own work in accordance with Seneca Academic Policy. No part of this assignment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the BTI225 instructors and / or made available in this assignment for my use.
+I also declare that no part of this assignment has been distributed to other students.
+Name: Arryell Parris
+Dated: 05/08/2020
+********************************************************************/
+
+/* -----Page Body----- */
+body {
+    margin: auto;
+}
+
+body#welcome, body#info {
+    background-color: #cfcfe8;
+    /*  #adaec4 
+        #c3c4db
+        #cfcfe8 */
+}
+
+body#reflect {
+    background-color: #efefef;
+    /*#d0e0f2*/
+}
+
+
+/* -----Header Div----- */
+body div#header {
+    margin: inherit;
+    user-select: none;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: #00004f;
+    
+    border: 1px solid rgba(0,0,0,0);
+}
+
+body#welcome div#header {
+    font-family: 'Lemonada', cursive;
+    font-size: 20px;
+}
+
+body#info div#header, body#reflect div#header {
+    font-family: sans-serif;
+    font-size: 150%;
+}
+
+
+/* -----Panels Div----- */
+body div#panels {
+    display: flex;
+    flex-direction: row;
+}
+
+#panels>div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+    /* Navigation Div */
+    #nav_pan {
+        border: 2px solid #ffffff;
+        background-color: rgba(80,80,80,0.6);
+        margin-top: inherit;
+        margin-bottom: inherit;
+        margin-left: 10px;
+        margin-right: 20px;
+        
+        height: 150px;
+        min-width: 100px;
+        max-width: 130px;
+        
+        display: flex;
+        justify-content: center;
+        user-select: none;
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        min-width: 90px;
+        max-width: 120px;
+        max-height: 150px;
+        
+        margin: auto;
+    }
+
+    button {
+        font-family: monospace;
+    }
+
+        .nav_btn {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            min-width: 80px;
+            max-width: 100px;
+            height: 35px; /*default is 18.5*/
+            
+            background-color: black;
+            color: white;
+            
+            border-color: white;
+            border-style: outset;
+            border-radius: 10px;
+            
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .nav_btn:hover {
+            background-color: #202020;
+            color: aqua;
+            border-color: aqua;
+        }
+
+        .nav_btn:active {
+            background-color: white;
+            border-color: grey;
+            color: grey;
+        }
+
+    /* Body-Panel Div */
+
+    #body_pan {
+        margin-top: inherit;
+        margin-bottom: inherit;
+        margin-left: auto;
+        margin-right: auto;
+        
+        border: 3px solid #000000;
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    body#welcome #body_pan, body#info #body_pan {
+        max-width: 800px;    
+    }
+
+    body#reflect #body_pan {
+        max-width: 1200px;
+    }
+
+        #body_pan p {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        #body_pan form {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            font-family: sans-serif;
+        }
+
+        form label {
+            font-size: 16px;
+        }
+
+        p#form_name {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: serif;
+        }
+
+        #body_pan form>div, #pass_div>div, #edu_div>div
+        {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        #names_div {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #names_div>div {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        #names_div>div {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .stat_opt label
+        {
+            font-size: 14px;
+        }
+
+
+    /* Side Panel Div */
+    #side_pan {
+        margin-top: inherit;
+        margin-bottom: inherit;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+        min-width: 200px;
+        max-width: 300px;
+        max-height: inherit;
+        border: 2px solid #000000;
+        background-color: #ffffff;
+        color: #000000;
+        user-select: none;
+        
+    }
+
+    #side_pan p {
+            margin: 7px;
+    }
+
+    body#reflect #side_pan {
+        visibility: hidden;
+    }
+
+    
+
+
+/* -----Footer Div----- */
+body div#footer {
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    color: white;
+    background-color: #00004f;
+}
+
+body#welcome div#footer, {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+}
+
+#footer a {
+    color: #98fb98;
+}
+
+#footer a:hover {
+    color: #d6ffd6;
+}
+
+#footer a:visited {
+    color: #ffc0cb;
+}
+
+
+
+/* -----Span Elements----- */
+span.btn_name {
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+
+span.bold {
+    font-weight: bold;
+}
+
+span.underline {
+    text-decoration: underline;
+}
+
+/*
+Please note that:
+'Page Body' represents the <body> element in the HTML document.
+'Page Body' is NOT the 'Body-Panel' (a <div> with id 'body_pan') which is child of the 'panels' <div> such that:
+
+    <html>
+        <body>
+            <div id='panels'>
+
+                <div id='body_pan'>
+                    <!-- this is the 'body_pan' div, a.k.a the 'Body-Panel' -->
+                </div>
+
+            </div>
+        </body>
+    </html>
+*/

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Arryell Parris</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./normalize.css" type="text/css">
+        <script src="./info.js"></script>
+    </head>
+    <body id="info">
+        <div id="header">
+            <header>
+                <h2>Sign Up</h2>
+            </header>
+        </div>
+        
+        <div id="panels">
+            <div id="nav_pan">
+               <div id="buttons">
+                    <button class = "nav_btn" id="home_btn" onclick="window.location.href= './honesty.html'; ">Home</button>
+                    <button class = "nav_btn" id="info_btn" onclick="window.location.href= '#'; ">Sign-Up</button>
+                    <button class = "nav_btn" id="rflc_btn" onclick="window.location.href= './reflection.html'; ">Reflection</button>
+                </div>
+            </div>
+
+            <div id="body_pan">
+                <p id="form_name">Sign-Up Form</p>
+                
+                <form id="signup_form" name="signup" method="post" action="https://httpbin.org/post" onsubmit="return validateForm()">
+                    
+                    <div id="names_div">
+                        <div id="first_name">
+                            <label for="fname">First Name</label><br>
+                            <input type="text" id="fname" name="name" required />
+                        </div>
+                        
+                        <div id="last_name">
+                            <label for="lname">Last Name</label><br>
+                            <input type="text" id="lname" name="name" required />
+                        </div>
+                    </div>
+                    
+                    
+                    <div id="age_div">
+                        <label for="age">Age</label><br>
+                        <input type="number" id="age" name="age" min="18" max="60" required />
+                    </div>
+                    
+                    
+                    <div id="email_div">
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    
+                    
+                    <div id="username_div">
+                        <label for="fname">Username</label><br>
+                        <input type="text" id="username" name="username" required />
+                    </div>
+                    
+                    
+                    <div id="pass_div">
+                        <div id="pass_first_div">
+                            <label for="pass">Password</label><br>
+                            <input type="password" id="pass" name="password" required />
+                        </div>
+
+                        <div id="pass_confirm_div">
+                            <label for="fname">Confirm Password</label><br>
+                            <input type="password" id="pass_con" name="pass_confirm" required />
+                        </div>
+                    </div>
+                    
+                    
+                    <div id="edu_div">
+                        
+                        <div id="edu_lvl">
+                            <label>Level of Education</label><br>
+                            <select name="level" id="lvl_sel" size="6" required>
+                                <option value="0" selected>- select -</option>
+                                <option value="1">Technical Diploma</option>
+                                <option value="2">College Diploma</option>
+                                <option value="3">Bachelor's Degree</option>
+                                <option value="4">Master's Degree</option>
+                                <option value="5">Others</option>
+                            </select>
+                        </div>
+
+                        <div id="edu_stat">
+                            <label>Education Status:</label>
+                            <div class="stat_opt">
+                                <label for="grad">Graduated</label>
+                                <input type="radio" id="grad" name="stat" value="grad" required />
+                            </div>
+                            
+                            <div class="stat_opt">
+                                <label for="current">Currently Enrolled</label>
+                                <input type="radio" id="current" name="stat" value="wip" required /> <!-- 'wip' = "work in progress" -->
+                            </div>
+                            
+                            <div class="stat_opt">
+                                <label for="not_grad">Did Not Graduate</label>
+                                <input type="radio" id="not_grad" name="stat" value="dnc" required /> <!-- 'dnc' = "did not complete" -->
+                            </div>
+                        </div>
+                        
+                        <div id="form_buttons">
+                            <button id="submit_btn" type="submit">Submit</button>
+                            <button id="reset_btn" type="reset">Start Over</button>
+                        </div>
+                        
+                    </div>
+                    
+                    <br><br>
+                    
+                    <input type="hidden" id="stdt_lname" name="student_lname" value="PARRIS" />
+                    <input type="hidden" id="stdt_id" name="student_id" value="134838192" />
+                </form>
+            </div>
+
+            <!--mandatory for this page -->
+            <div id="side_pan">
+                <p id="help_message">
+                    You may enter your information in the form provided.<br>
+                    <br>
+                    Click the <span class="btn_name">Submit</span> button when finished to submit the form.<br>
+                    <br>
+                    You may click the <span class="btn_name">Start Over</span> button at any time to reset the form.<br>
+                    <br>
+                    
+                    Username must:<br>
+                    > start with a letter<br>
+                    > be at least 6 characters long<br>
+                    <br>
+                    Password must: <br>
+                    > start with a letter<br>
+                    > be <span class="bold underline">exactly</span> 6 characters in length<br>
+                    > contain at least 1 uppercase letter<br>
+                    > contain at least 1 digit<br>
+                </p>
+            </div>
+        </div>
+        
+        <div id="footer">
+            <footer>
+                &copy; 2020 Arryell Parris<br>
+                Source Files available <a href="https://github.com/a-parris21/BTI225_Final" target="_blank">on GitHub</a>
+            </footer>
+        </div>
+    </body>
+</html>
