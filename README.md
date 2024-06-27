@@ -1,8 +1,8 @@
 ### Author: Arryell Parris
 
-Last Edited: **23/01/2023**
+Source Code Last Edited: **23/01/2023**
 
-This repository contains copies of all the source files which I created for the BTI225NAA Final Assessment.
+This repository contains copies of all the source files which I created for the BTI225 (Web Programming Principles) Section NAA Final Assessment.
 
 All of the code within this repository is my own work.
 Any media files, such as images, which I have not created are documented in a list which contains the filename used in this repository
